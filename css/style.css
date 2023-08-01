@@ -1,34 +1,42 @@
 /*-----RESET-----*/
-*{ background-color:white;}
-*{ margin: 0;
-padding: 0;
-box-sizing: border-box;}
+* {
+    background-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');/*
 
 
 /*-----HEADER-----*/
-h1{color:#D64550;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-font-style: italic;
-font-size: 200px;
-text-align: center;}
+h1 {
+    color: #D64550;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 200px;
+    text-align: center;
+}
 
-.barra-inicio ul li{
+.barra-inicio ul li {
     margin: 15px;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
     list-style: none;
 }
 
-header nav ul a:hover{
+header nav ul a:hover {
     background-color: #EABDA8;
 }
 
-header nav ul li a{
+header nav ul li a {
     text-decoration: none;
     color: #D64550;
     font-size: 20px;
@@ -37,10 +45,12 @@ header nav ul li a{
 
 
 /*-----MAIN-----*/
-.hero-section div{ color: #D64550;
+.hero-section div {
+    color: #D64550;
     text-align: center;
 }
-.hero-section{
+
+.hero-section {
     width: 100%;
     height: 100vh;
     background-image: url(../img/collar\ hero\ setcion.webp);
@@ -51,41 +61,45 @@ header nav ul li a{
 
 
 }
-.hero-section h2{
+
+.hero-section h2 {
     color: #D64550;
     font-size: 80px;
     margin: 15px;
 }
 
-.hero-section p{
+.hero-section p {
     margin-bottom: 15px;
     font-size: 35px;
 }
 
-.descripcion{ color: #D64550;
-font-size: 20px;
-margin: 30px;}
+.descripcion {
+    color: #D64550;
+    font-size: 20px;
+    margin: 30px;
+}
 
-.productos-desta{
+.productos-desta {
     color: #D64550;
     font-size: 30px;
     font-weight: 200;
     text-align: center;
 }
 
-.productos{
+.productos {
     width: 100%;
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
 }
 
-.productos div{
+.productos div {
     border: #D64550 solid 5px;
     height: 400px;
     text-align: center;
 }
-.productos div h4{
+
+.productos div h4 {
     text-align: center;
     color: #D64550;
     font-size: 20px;
@@ -95,20 +109,21 @@ margin: 30px;}
     color: white;
 }
 
-.productos div a:hover{
+.productos div a:hover {
     background-color: #EABDA8;
 }
 
-.productos div img{
+.productos div img {
     height: 250px;
     width: 250px;
     margin: 20px;
     padding: 10px;
     background-position: center;
-    justify-content: center;}
+    justify-content: center;
+}
 
 
-.productos div a{
+.productos div a {
     font-size: 30px;
     border: solid 5px #D64550;
     background-color: #D64550;
@@ -116,16 +131,17 @@ margin: 30px;}
     text-align: center;
     text-decoration: none;
     margin: 20px;
-    padding: 10px;}
-    
-
-.coleccion-d{
-    color: #D64550;
-font-size: 20px;
-margin: 30px
+    padding: 10px;
 }
 
-.galeria{
+
+.coleccion-d {
+    color: #D64550;
+    font-size: 20px;
+    margin: 30px
+}
+
+.galeria {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -133,14 +149,14 @@ margin: 30px
     gap: 20px;
 }
 
-.galeria div img{
+.galeria div img {
     height: 100%;
     width: 100%;
-    background-position: center;  
+    background-position: center;
     object-fit: cover;
 }
 
-.galeria div a{
+.galeria div a {
     font-size: 20px;
     border: solid 5px #D64550;
     background-color: #D64550;
@@ -153,40 +169,42 @@ margin: 30px
     margin-right: 20px;
 }
 
-.img4{
+.img4 {
     grid-row: span 2;
 }
 
-.img5{
+.img5 {
     grid-column: span 2;
 }
 
-.img6{
+.img6 {
     grid-row: span 2;
 }
 
-.img7{
+.img7 {
     grid-row: span 2;
 }
 
-.img8{
+.img8 {
     grid-row: span 2;
 }
-    
-.img9{
+
+.img9 {
     grid-column: span 2;
 }
 
 
 /*----Pages Nosotros------*/
-h2{color: #D64550;
+h2 {
+    color: #D64550;
     font-size: 20px;
-    margin: 30px;}
+    margin: 30px;
+}
 
 
-    /*----- Pages Ofertas------*/
+/*----- Pages Ofertas------*/
 
-.alert{
+.alert {
     color: #D64550;
     font-size: 20px;
     margin: 30px;
@@ -197,39 +215,114 @@ h2{color: #D64550;
 
 
 /*-----FOOTER-----*/
-footer{
+footer {
     display: flex;
     justify-content: space-between;
 }
 
-footer #contaco div a :target img{
-    background-color: #EABDA8}
+footer #contaco div a :target img {
+    background-color: #EABDA8
+}
 
 
-footer div a img{
+footer div a img {
     height: 50px;
-    width: 50px;}
+    width: 50px;
+}
 
-footer div h2{
-    color:#D64550;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-font-style: italic;
-font-size: 50px;
-text-align: center;}
+footer div h2 {
+    color: #D64550;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 50px;
+    text-align: center;
+}
 
 
-/*-----MEDIA QUOTES-----*/
+/*-----MEDIA QUERIES-----*/
 
-/*@media screen and (max-width 900px){
-    .galeria{
+@media screen and (max-width: 950px) {
+    .galeria {
         grid-template-columns: 1fr 1fr;
         grid-auto-rows: 220px;
-    }}
+    }
 
-    .grid-pic{
-        grid-column: span 1 ;
+    .grid-pic {
+        grid-column: span 1;
         grid-row: span 1;
     }
-    
-@media screen and (max-width){
-    al aplicar las media se rompe mi galeria y no sé como arreglarlo.*/
+
+    .img9 {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .productos {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 850px){
+    .hero-section {
+        width: 100%;
+        height: auto;
+        background-image: none
+    }
+    @media screen and (max-width: 600px) {
+        header h1 {
+            font-size: 150px;
+        }
+        header nav ul li a {
+            font-size: 20px;
+        }
+        .coleccion-d {
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        .hero-section div h2 {
+            font-size: 60px;
+        }
+
+        .hero-section div p {
+            font-size: 20px;
+        }
+
+        footer {
+            flex-direction: column;
+        }
+
+        footer div a img {
+            height: 40px;
+            width: 40px;
+            align-items: center;
+        }
+    }
+
+    @media screen and (max-width: 400px){
+        .galeria {
+            grid-template-columns: 1fr;
+            grid-template-areas: auto;
+        }
+        .grid-pic {
+            grid-column: span 1;
+            grid-row: span 1;
+            width: 80%;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 100px;
+        }
+        header nav ul li a {
+            font-size: 10px;
+        }
+        .coleccion-d{
+            font-size: 20px;
+            text-align: center;}
+    }}
