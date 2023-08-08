@@ -33,13 +33,16 @@ header nav ul {
 }
 
 header nav ul a:hover {
-    background-color: #EABDA8;
+    color: #EABDA8;
 }
 
 header nav ul li a {
     text-decoration: none;
     color: #D64550;
     font-size: 20px;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
 }
 
 
@@ -107,10 +110,13 @@ header nav ul li a {
     border: solid 5px #D64550;
     background-color: #D64550;
     color: white;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in
 }
 
 .productos div a:hover {
-    background-color: #EABDA8;
+    color: #EABDA8;
 }
 
 .productos div img {
@@ -132,6 +138,9 @@ header nav ul li a {
     text-decoration: none;
     margin: 20px;
     padding: 10px;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in
 }
 
 
@@ -211,6 +220,12 @@ h2 {
     text-align: center;
 }
 
+.descripcion-coleccion p{
+    
+        color: #D64550;
+        font-size: 20px;
+        margin: 30px
+}
 
 
 

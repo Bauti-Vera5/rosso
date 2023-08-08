@@ -1,0 +1,35 @@
+header {
+    h1 {
+        color: $color-primario;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-size: 200px;
+        text-align: center;
+    }
+
+    .barra-inicio {
+        ul {
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            list-style: none;
+
+            li {
+                margin: 15px;
+
+                a {
+                    text-decoration: none;
+                    color: $color-primario;
+                    font-size: 20px;
+                    transition-property: color;
+                    transition-duration: 1s;
+                    transition-timing-function: ease-in;
+                        &:hover{
+                            color: $color-secundario;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
