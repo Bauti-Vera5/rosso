@@ -1,9 +1,9 @@
 header {
     h1 {
-        color: $color-primario;
+        color: nth($colores, 1);
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-style: italic;
-        font-size: 200px;
+        font-size: nth($font-sizes , 6);
         text-align: center;
     }
 
@@ -18,14 +18,14 @@ header {
                 margin: 15px;
 
                 a {
-                    text-decoration: none;
-                    color: $color-primario;
-                    font-size: 20px;
+                    @include enlace;
+                    color: nth($colores, 1);
+                    font-size: nth($font-sizes, 2);
                     transition-property: color;
-                    transition-duration: 1s;
+                    transition-duration: 0.5s;
                     transition-timing-function: ease-in;
                         &:hover{
-                            color: $color-secundario;
+                            color: nth($colores, 2);
                         }
                         
                     }

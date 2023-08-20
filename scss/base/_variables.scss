@@ -1,8 +1,18 @@
 $color-primario: #D64550;
 $color-secundario: #EABDA8;
+$color-terciario: white;
+
+$colores: #D64550, #EABDA8, white;
+
+$font-sizes: 0.93rem, 1.25rem, 2.19rem, 3.12rem, 5rem, 12.5rem, 2.89rem, 9.4rem, 1.56rem, 8.75rem, 3.75rem, 6.25rem, 0.62rem;
 
 %parrafos{
         color: $color-primario;
         font-size: 20px;
         margin: 30px;
+}
+
+@mixin enlace{
+        text-align: center;
+        text-decoration: none;
 }

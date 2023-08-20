@@ -8,7 +8,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-section .descripcion, .coleccion-d, section h2, .descripcion-coleccion p {
+section .descripcion, .coleccion-d, section p, .descripcion-coleccion p, .formulario .mb-3 label {
   color: #D64550;
   font-size: 20px;
   margin: 30px; }
@@ -17,7 +17,7 @@ header h1 {
   color: #D64550;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-style: italic;
-  font-size: 200px;
+  font-size: 12.5rem;
   text-align: center; }
 
 header .barra-inicio ul {
@@ -28,11 +28,12 @@ header .barra-inicio ul {
   header .barra-inicio ul li {
     margin: 15px; }
     header .barra-inicio ul li a {
+      text-align: center;
       text-decoration: none;
       color: #D64550;
-      font-size: 20px;
+      font-size: 1.25rem;
       transition-property: color;
-      transition-duration: 1s;
+      transition-duration: 0.5s;
       transition-timing-function: ease-in; }
       header .barra-inicio ul li a:hover {
         color: #EABDA8; }
@@ -51,19 +52,19 @@ header .barra-inicio ul {
     text-align: center; }
     .hero-section div h2 {
       color: #D64550;
-      font-size: 80px;
+      font-size: 5rem;
       margin: 15px; }
     .hero-section div p {
       margin-bottom: 15px;
-      font-size: 35px; }
+      font-size: 2.19rem; }
 
 /*------Descripción-----*/
 /*------Productos-desta-----*/
 section .productos-desta {
   color: #D64550;
-  font-size: 30px;
-  font-weight: 200;
-  text-align: center; }
+  font-size: 2.19rem;
+  text-align: center;
+  margin-bottom: 20px; }
 
 /*------Productos-----*/
 .productos {
@@ -72,41 +73,44 @@ section .productos-desta {
   justify-content: center;
   justify-content: space-evenly; }
   .productos div {
-    border: #D64550 solid 5px;
-    height: 400px;
-    text-align: center; }
+    border: #EABDA8 solid 5px;
+    height: 420px;
+    text-align: center;
+    margin: auto; }
     .productos div h4 {
       text-align: center;
-      color: #D64550;
-      font-size: 20px;
-      font-weight: 200;
-      border: solid 5px #D64550;
-      background-color: #D64550;
+      color: #EABDA8;
+      font-size: 1.25rem;
+      background-color: #EABDA8;
       color: white;
       transition-property: color;
       transition-duration: 1s;
       transition-timing-function: ease-in; }
     .productos div img {
-      height: 250px;
-      width: 250px;
-      margin: 20px;
-      padding: 10px;
-      background-position: center;
-      justify-content: center; }
+      height: 85%;
+      width: 85%;
+      padding: 10px; }
     .productos div a {
-      font-size: 30px;
-      border: solid 5px #D64550;
-      background-color: #D64550;
-      color: white;
+      font-size: 0.93rem;
+      border: solid 3px #EABDA8;
+      color: #D64550;
       text-align: center;
       text-decoration: none;
-      margin: 20px;
-      padding: 10px; }
+      margin: auto;
+      color: #D64550;
+      transition-property: color;
+      transition-duration: 1s;
+      transition-timing-function: ease-in; }
       .productos div a:hover {
         color: #EABDA8; }
 
 /*------Page Colección-----*/
 /*------coleccion-d-----*/
+.coleccion-d {
+  text-align: center; }
+  .coleccion-d span {
+    text-align: center; }
+
 /*------Galeria-----*/
 .galeria {
   width: 100%;
@@ -114,44 +118,92 @@ section .productos-desta {
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: 250px;
   gap: 20px; }
-  .galeria .grid-pic img {
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    object-fit: cover; }
-  .galeria .grid-pic .img4 {
-    grid-row: span 2; }
-  .galeria .grid-pic .img5 {
-    grid-column: span 2; }
-  .galeria .grid-pic .img6 {
-    grid-row: span 2; }
-  .galeria .grid-pic .img7 {
-    grid-row: span 2; }
-  .galeria .grid-pic .img8 {
-    grid-row: span 2; }
-  .galeria .grid-pic .img9 {
-    grid-column: span 2; }
+  .galeria .grid-pic {
+    border: solid 5px #EABDA8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; }
+    .galeria .grid-pic img {
+      height: 85%;
+      width: 100%;
+      background-position: center;
+      object-fit: cover; }
+    .galeria .grid-pic a {
+      text-align: center;
+      text-decoration: none;
+      color: #D64550;
+      border: solid 3px #EABDA8;
+      margin: auto; }
+      .galeria .grid-pic a:hover {
+        color: #EABDA8; }
+    .galeria .grid-pic .img4 {
+      grid-row: span 2; }
+    .galeria .grid-pic .img5 {
+      grid-column: span 2; }
+    .galeria .grid-pic .img6 {
+      grid-row: span 2; }
+    .galeria .grid-pic .img7 {
+      grid-row: span 2; }
+    .galeria .grid-pic .img8 {
+      grid-row: span 2; }
+    .galeria .grid-pic .img9 {
+      grid-column: span 2; }
 
 /*------Pages Nosotros-----*/
+section h2 {
+  font-size: 2.89rem;
+  color: #D64550;
+  margin: 20px;
+  text-align: center; }
+
+section p span {
+  text-align: center; }
+
+#carouselExample {
+  width: 700px;
+  margin: auto; }
+  #carouselExample .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
 /*------Pages Ofertas-----*/
 .alert {
   color: #D64550;
-  font-size: 20px;
+  font-size: 1.25rem;
   margin: 30px;
   text-align: center; }
 
+/*------Pages Contactos-----*/
+.formulario {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto; }
+  .formulario .mb-3 {
+    width: 400px; }
+
 footer {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 20px;
+  margin: 10px; }
   footer div h2 {
     color: #D64550;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
-    font-size: 50px;
+    font-size: 3.12rem;
     text-align: center; }
   footer div a img {
     height: 50px;
-    width: 50px; }
+    width: 50px;
+    transition: 1s; }
+    footer div a img:hover {
+      transform: scale(1.2); }
 
 @media screen and (max-width: 950px) {
   .galeria {
@@ -165,38 +217,55 @@ footer {
 
 @media screen and (max-width: 900px) {
   .productos {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .carousel-formulario {
+    flex-direction: column; }
+  #carouselExample {
+    width: 100%; } }
 
 @media screen and (max-width: 850px) {
   .hero-section {
     width: 100%;
     height: auto;
-    background-image: none; } }
+    background-image: none; }
+  #carouselExample {
+    width: 100%; } }
 
 @media screen and (max-width: 600px) {
   header h1 {
-    font-size: 150px; }
+    font-size: 9.4rem;
+    text-align: center; }
   header nav ul li a {
-    font-size: 20px; }
+    font-size: 1.25rem;
+    text-align: center; }
   .coleccion-d {
-    font-size: 25px;
-    text-align: center; } }
+    font-size: 1.56rem;
+    text-align: center; }
+  #carouselExample {
+    width: 100%; } }
 
 @media screen and (max-width: 450px) {
+  header h1 {
+    font-size: 8.75rem;
+    text-align: center; }
   .barra-inicio ul {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
   .hero-section div h2 {
-    font-size: 60px; }
+    font-size: 3.75rem;
+    text-align: center; }
   .hero-section div p {
-    font-size: 20px; }
+    font-size: 1.25rem;
+    text-align: center; }
   footer {
     flex-direction: column; }
   footer div a img {
     height: 40px;
     width: 40px;
-    align-items: center; } }
+    align-items: center; }
+  #carouselExample {
+    width: 100%; } }
 
 @media screen and (max-width: 400px) {
   .galeria {
@@ -210,9 +279,20 @@ footer {
     justify-content: center;
     align-items: center; }
   header h1 {
-    font-size: 100px; }
+    font-size: 6.25rem;
+    text-align: center; }
   header nav ul li a {
-    font-size: 10px; }
+    font-size: 0.62rem;
+    text-align: center; }
   .coleccion-d {
-    font-size: 20px;
-    text-align: center; } }
+    font-size: 1.25rem;
+    text-align: center; }
+  footer {
+    flex-direction: column;
+    justify-content: center; }
+  footer div a img {
+    height: 40px;
+    width: 40px;
+    justify-content: center; }
+  #carouselExample {
+    width: 100%; } }

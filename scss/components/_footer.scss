@@ -1,12 +1,14 @@
 footer{
     display: flex;
     justify-content: space-between;
+    padding: 20px;
+    margin: 10px;
     div{
         h2{
-            color: $color-primario;
+            color: nth($colores, 1);
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             font-style: italic;
-            font-size: 50px;
+            font-size:nth($font-sizes, 4);
             text-align: center;
         }
     }
@@ -15,8 +17,12 @@ footer{
             img{
                 height: 50px;
                 width: 50px;
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.2);
+                }}
+                }
                 } 
                 
             }
-        }
-}
+        

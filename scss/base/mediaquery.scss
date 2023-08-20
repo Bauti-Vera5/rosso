@@ -19,6 +19,14 @@
         flex-direction: column;
     }
 
+    .carousel-formulario{
+        flex-direction: column;
+    }
+
+    #carouselExample{
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 850px) {
@@ -27,75 +35,110 @@
         height: auto;
         background-image: none
     }
+    #carouselExample{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {
-        header h1 {
-            font-size: 150px;
-        }
-
-        header nav ul li a {
-            font-size: 20px;
-        }
-
-        .coleccion-d {
-            font-size: 25px;
-            text-align: center;
-        }
+    header h1 {
+        font-size: nth($font-sizes, 8 );
+        text-align: center;
     }
+
+    header nav ul li a {
+        font-size: nth($font-sizes, 2 );
+        text-align: center;
+    }
+
+    .coleccion-d {
+        font-size:nth($font-sizes, 9 );
+        text-align: center;
+    }
+    #carouselExample{
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 450px) {
-        .barra-inicio ul{
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .hero-section div h2 {
-            font-size: 60px;
-        }
-
-        .hero-section div p {
-            font-size: 20px;
-        }
-
-        footer {
-            flex-direction: column;
-        }
-
-        footer div a img {
-            height: 40px;
-            width: 40px;
-            align-items: center;
-        }
+    header h1 {
+        font-size:nth($font-sizes, 10 );
+        text-align: center;
     }
+
+    .barra-inicio ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-section div h2 {
+        font-size:nth($font-sizes, 11 );
+        text-align: center;
+    }
+
+    .hero-section div p {
+        font-size:nth($font-sizes, 2 );
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer div a img {
+        height: 40px;
+        width: 40px;
+        align-items: center;
+
+    }
+    #carouselExample{
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 400px) {
-        .galeria {
-            grid-template-columns: 1fr;
-            grid-template-areas: auto;
-        }
-
-        .grid-pic {
-            grid-column: span 1;
-            grid-row: span 1;
-            width: 80%;
-            height: auto;
-            justify-content: center;
-            align-items: center;
-        }
-
-        header h1 {
-            font-size: 100px;
-        }
-
-        header nav ul li a {
-            font-size: 10px;
-        }
-
-        .coleccion-d {
-            font-size: 20px;
-            text-align: center;
-        }
-    
+    .galeria {
+        grid-template-columns: 1fr;
+        grid-template-areas: auto;
     }
+
+    .grid-pic {
+        grid-column: span 1;
+        grid-row: span 1;
+        width: 80%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size:nth($font-sizes, 12 );
+        text-align: center;
+    }
+
+    header nav ul li a {
+        font-size:nth($font-sizes, 13 );
+        text-align: center;
+    }
+
+    .coleccion-d {
+        font-size:nth($font-sizes, 2 );
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer div a img {
+        height: 40px;
+        width: 40px;
+        justify-content: center;
+
+    }
+    #carouselExample{
+        width: 100%;
+    }
+}
